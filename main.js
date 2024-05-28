@@ -13,7 +13,8 @@ let container = document.body;
 
 resCodes.forEach(code => {
     let div = document.createElement('div');
-    div.innerHTML = `  <a href="${url}${code}">
+    let status = "status/";
+    div.innerHTML = `  <a href="${url}${status}${code}">
     <img src="${url}${code}.jpg"> </a>`;
     container.appendChild(div);
 });
